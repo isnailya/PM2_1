@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+  width: 530px;  
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.box p {
+    font-size: 18px;
+}
+
+.button {
+    background-color: green;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.error-box {
+    height: 40px;
+    background: red;
+    display: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+
+

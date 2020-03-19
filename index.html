@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Module2</title>
+       
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+    <body>
+        <!-- <img src="https://images.unsplash.com/photo-1551522355-dbf80597eba8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"alt="photo"/> -->
+        <div class="container">
+            <div class="flex-container">
+                <div class="box">
+                    <p>Начальная сумма вклада (₽)</p>
+                </div>
+                <div>
+                    <input type="number" id="initialamount">
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <p>Сумма ежемесячного пополнения (₽)</p>
+                </div>
+                <div>
+                    <input type="number" id="topupamount">
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <p>Процентная ставка (%)</p>
+                </div>
+                <div>
+                    <input type="number" id="percent" >
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <p>Срок вклада (дней)</p>
+                </div>
+                <div>
+                    <input type="number" id="date">
+                </div>
+            </div>
+            <button id="button-count" class="button">Рассчитать</button>
+            <div class="error-box" id="error">
+                <p>mistake</p>
+            </div>
+
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+
+
+
+</html>
