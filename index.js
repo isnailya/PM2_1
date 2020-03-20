@@ -1,6 +1,4 @@
-
 document.getElementById("button-count").addEventListener('click', calcBankDeposit);
-
 function calcBankDeposit() {
     let inputamount = +document.getElementById('initialamount').value;
     let inputtopupamount = +document.getElementById('topupamount').value;
@@ -8,7 +6,7 @@ function calcBankDeposit() {
     let inputdate = +document.getElementById('date').value;
     let finalresult =+ inputamount;
      
-    if (inputamount <=  0 || isNaN(inputamount)){
+    if (inputamount <= 0 || isNaN(inputamount)){
         showMistake();
         console.log('mistake');
         return NaN;
