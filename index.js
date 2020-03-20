@@ -4,7 +4,7 @@ function calcBankDeposit() {
     let inputtopupamount = +document.getElementById('topupamount').value;
     let inputpercent = +document.getElementById('percent').value;
     let inputdate = +document.getElementById('date').value;
-    let finalresult =+ inputamount;
+    let finalresult = inputamount;
      
     if (inputamount <= 0 || isNaN(inputamount)){
         showMistake();
@@ -24,9 +24,9 @@ function calcBankDeposit() {
         console.log('mistake'); 
         return NaN;
     } else {
-        let month = Math.trunc(inputdate / 30);
+        let month = Math.floor(inputdate / 30);
         for (let i = 0; i < month; i++) {
-          finalresult = finalresult + inputtopupamount + ((finalresult + inputtopupamount) * inputpercent) / 100;
+          finalresult = finalresult + inputtopupamount + (finalresult + inputtopupamount) * inputpercent / 1200;
         }
         alert(Math.ceil(finalresult));
     }
@@ -36,4 +36,6 @@ function calcBankDeposit() {
 function showMistake () {
     document.getElementById('error').style.display="block";
 }
+
+
 
