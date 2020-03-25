@@ -28,8 +28,8 @@ function calcBankDeposit() {
           finalresult = finalresult + inputtopupamount + finalresult * inputpercent / 1200;
         }
         
-         document.getElementById('result').innerHTML =finalresult;
-         //alert(finalresult);
+        // document.getElementById('result').innerHTML =finalresult;
+         alert(finalresult);
     }
     
 }
